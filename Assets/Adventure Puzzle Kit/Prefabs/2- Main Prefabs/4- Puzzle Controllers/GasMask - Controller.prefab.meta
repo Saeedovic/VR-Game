@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c5731f3909138514189b888226463071
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Prefabs/2- Main Prefabs/4- Puzzle Controllers/GasMask
+    - Controller.prefab
+  uploadId: 587340

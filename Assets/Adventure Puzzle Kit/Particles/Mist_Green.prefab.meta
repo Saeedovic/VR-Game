@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8b1b97c35d16c7044a7cb3adef49ada5
+timeCreated: 1513095237
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Particles/Mist_Green.prefab
+  uploadId: 587340

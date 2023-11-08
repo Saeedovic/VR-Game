@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f91bc3077b18cd469b5790245b46322
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/ScriptableObjects/Sounds/Generic/SO_Door_Open_Normal.asset
+  uploadId: 587340

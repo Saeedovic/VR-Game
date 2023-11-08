@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 99d1ea0cc0f4cd548acc6939812e7a13
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Materials/1- Sample Materials-Examples/StandingLamp/M_StandingLight.mat
+  uploadId: 587340

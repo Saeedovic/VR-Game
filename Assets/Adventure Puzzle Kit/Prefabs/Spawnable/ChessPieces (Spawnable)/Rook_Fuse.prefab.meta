@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e982dfd25d4841c4798e9a4aa110e911
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Prefabs/Spawnable/ChessPieces (Spawnable)/Rook_Fuse.prefab
+  uploadId: 587340

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a106064164a805e4a90e18f3fbb1355e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Animations/LeverSystem/Controller/Accepted_Switch03.controller
+  uploadId: 587340

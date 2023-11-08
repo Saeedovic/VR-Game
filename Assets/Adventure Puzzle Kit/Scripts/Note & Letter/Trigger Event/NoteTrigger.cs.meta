@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4c04e2febf4d6b24d96cdcc48d666902
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Scripts/Note & Letter/Trigger Event/NoteTrigger.cs
+  uploadId: 587340

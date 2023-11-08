@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9f7abd67b5b29dc42b74319f9292bf9a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Prefabs/2- Main Prefabs/2- AK Managers/AK
+    - UIManager.prefab
+  uploadId: 587340

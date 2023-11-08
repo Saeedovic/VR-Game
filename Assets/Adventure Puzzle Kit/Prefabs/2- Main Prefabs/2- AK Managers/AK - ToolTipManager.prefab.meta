@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bb33c4c8dd3ee1149b0875c435ce7f9d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Prefabs/2- Main Prefabs/2- AK Managers/AK
+    - ToolTipManager.prefab
+  uploadId: 587340
