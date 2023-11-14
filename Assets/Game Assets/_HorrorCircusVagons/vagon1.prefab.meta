@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 505a98e136177e34aa9836a4233231ca
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 115946
+  packageName: Horror circus vagons
+  packageVersion: 1.0
+  assetPath: Assets/_HorrorCircusVagons/vagon1.prefab
+  uploadId: 241767
