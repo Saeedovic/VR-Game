@@ -3364,12 +3364,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1443295272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fe054a4d2abde048817708a6a1f2a88, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f34d50297888ca4ba10ae6578ff605a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalWeight: 0
+  weightText: {fileID: 1168832326}
   goalWeight: 10
-  weightText: {fileID: 508132765}
 --- !u!4 &1443295274
 Transform:
   m_ObjectHideFlags: 0
@@ -9613,7 +9612,7 @@ Transform:
   m_GameObject: {fileID: 1935185230}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09947562, y: -0.04552865, z: -0.046854973}
+  m_LocalPosition: {x: 0.09947587, y: -0.04552865, z: -0.046854973}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9903,6 +9902,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 0}
+  isGlobal: 0
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!4 &2012130260
 Transform:
   m_ObjectHideFlags: 0
