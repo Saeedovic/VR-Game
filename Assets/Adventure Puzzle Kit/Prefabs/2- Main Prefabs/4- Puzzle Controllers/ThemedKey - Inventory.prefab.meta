@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 552392f1fd287884ebadc0378bf59d62
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Prefabs/2- Main Prefabs/4- Puzzle Controllers/ThemedKey
+    - Inventory.prefab
+  uploadId: 587340

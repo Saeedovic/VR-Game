@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4473019500029656107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4473019500847005171}
+  - component: {fileID: 4473019500029656106}
+  m_Layer: 0
+  m_Name: AK - UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4473019500847005171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473019500029656107}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4473019500029656106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473019500029656107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574816de868e57048ad671ce4766ee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  adventureKitCanvas: {fileID: 0}
+  flashlightUI: {fileID: 0}
+  flashlightBatteryUI: {fileID: 0}
+  gasmaskUI: {fileID: 0}
+  gasMaskFilterUI: {fileID: 0}
+  generatorUI: {fileID: 0}
+  themedKeyUI: {fileID: 0}
+  valveUI: {fileID: 0}
+  chessPuzzleUI: {fileID: 0}
+  themedKeyContainerUI: {fileID: 0}
+  valveContainerUI: {fileID: 0}
+  chessPuzzleContainerUI: {fileID: 0}
+  _radialIndicator: {fileID: 0}
+  triggerInteractPrompt: {fileID: 0}
+  crosshair: {fileID: 0}
+  nameHighlightCanvas: {fileID: 0}
+  flashlightIndicatorUI: {fileID: 0}
+  batteryLevelUI: {fileID: 0}
+  batteryIconUI: {fileID: 0}
+  batteryCountUI: {fileID: 0}
+  fuseboxUI: {fileID: 0}
+  fuseIcon: {fileID: 0}
+  fuseCountUI: {fileID: 0}
+  maskEquippedColor: {r: 0, g: 1, b: 0, a: 1}
+  maskNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  filterAlarmColor: {r: 1, g: 0, b: 0, a: 1}
+  filterNormalColor: {r: 1, g: 1, b: 1, a: 1}
+  healthTextUI: {fileID: 0}
+  healthSliderUI: {fileID: 0}
+  _maskIconUI: {fileID: 0}
+  _filterIconUI: {fileID: 0}
+  _filterCountUI: {fileID: 0}
+  _filterSliderUI: {fileID: 0}
+  visorImageOverlay: {fileID: 0}
+  _postProcessingVolume: {fileID: 0}
+  _originalProfile: {fileID: 11400000, guid: e2030db23b741d74fb49b24ade93607e, type: 2}
+  _gasMaskProfile: {fileID: 11400000, guid: 0c5f23220b8c8674e8cc4b3117f16bc0, type: 2}
+  fuelFillUI: {fileID: 0}
+  currentFuelText: {fileID: 0}
+  maximumFuelText: {fileID: 0}
+  noUICloseButton: {fileID: 0}
+  basicItemNameUI: {fileID: 0}
+  basicItemDescUI: {fileID: 0}
+  basicExamineUI: {fileID: 0}
+  rightItemNameUI: {fileID: 0}
+  rightItemDescUI: {fileID: 0}
+  rightExamineUI: {fileID: 0}
+  interactionItemNameUI: {fileID: 0}
+  interactionNameHelpPrompt: {fileID: 0}
+  interactionNameMainUI: {fileID: 0}
+  interestPointText: {fileID: 0}
+  interestPointParentUI: {fileID: 0}
+  _examinableItem: {fileID: 0}
+  showHelp: 1
+  examineHelpUI: {fileID: 0}
+  tkInventorySlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tkInventoryBGSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  valveInventorySlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  valveInventoryBGSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  valveProgressUI: {fileID: 0}
+  sliderParentUI: {fileID: 0}
+  _slotWidgets:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  safeCanvasUI: {fileID: 0}
+  acceptBtn: {fileID: 0}
+  numberUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  selectionBtn:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  payPhoneCodeText: {fileID: 0}
+  officePhoneCodeText: {fileID: 0}
+  mobilePhoneCodeText: {fileID: 0}
+  payPhoneCanvas: {fileID: 0}
+  officePhoneCanvas: {fileID: 0}
+  mobilePhoneCanvas: {fileID: 0}
+  modernCodeText: {fileID: 0}
+  scifiCodeText: {fileID: 0}
+  keyboardCodeText: {fileID: 0}
+  modernCanvas: {fileID: 0}
+  scifiCanvas: {fileID: 0}
+  keyboardCanvas: {fileID: 0}
+  isInteracting: 0

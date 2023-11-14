@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d32749d2771d6d140886652a1cdb569c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Scripts/Padlock/PadlockNumberSelector.cs
+  uploadId: 587340

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 00352e98edd5d0c4896d779a21446190
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Prefabs/2- Main Prefabs/4- Puzzle Controllers/ChessPuzzle
+    - Inventory.prefab
+  uploadId: 587340

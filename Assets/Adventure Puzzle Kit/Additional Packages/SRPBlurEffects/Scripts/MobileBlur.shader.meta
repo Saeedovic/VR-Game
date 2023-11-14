@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: f9d5fa183cd6b45eeb1491f74863cd91
+ShaderImporter:
+  userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Additional Packages/SRPBlurEffects/Scripts/MobileBlur.shader
+  uploadId: 587340

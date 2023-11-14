@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 118a0c6a5771ea74aaaa5ab8266e57b7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Editor/AKUIManagerEditor.cs
+  uploadId: 587340

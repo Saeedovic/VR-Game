@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6a5f25a1c74dc4d4cadddb87596b6e69
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/Scripts/Gas Mask/GasMaskItem.cs
+  uploadId: 587340

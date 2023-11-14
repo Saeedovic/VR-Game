@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b80104970cded0c4cbc74d32b6efc22c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175376
+  packageName: Adventure Puzzle Kit
+  packageVersion: 1.6
+  assetPath: Assets/Adventure Puzzle Kit/ScriptableObjects/Sounds/Generator/SO_Generator_Water_Pouring.asset
+  uploadId: 587340
