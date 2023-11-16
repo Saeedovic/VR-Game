@@ -1,4 +1,4 @@
-using System;
+using System.Threading.Tasks;
 using Kandooz.InteractionSystem.Animations;
 using Kandooz.InteractionSystem.Interactions;
 using UnityEngine;
@@ -21,6 +21,7 @@ namespace Kandooz.InteractionSystem.Core
         [SerializeField] private Config config;
         [SerializeField] private float playerHeight;
         [SerializeField] private bool initializeLayers;
+        [SerializeField] private Camera mainCamera;
 
         private HandPoseController leftPoseController, rightPoseController;
         public HandPoseController LeftHandPrefab => poseData.LeftHandPrefab;
@@ -29,6 +30,8 @@ namespace Kandooz.InteractionSystem.Core
 
         private void Awake()
         {
+            ResetPosition();
+            
             switch (interactionSystemType)
             {
                 case InteractionSystemType.TransformBased:
@@ -95,6 +98,25 @@ namespace Kandooz.InteractionSystem.Core
             handController.Config = config;
             hand.AddComponent<TriggerInteractor>();
             return poseController;
+        }
+
+        public async void ResetPosition()
+        {
+            var cameraPosition = mainCamera.transform.localPosition;
+            cameraPosition.y = 0;
+            offsetObject.transform.localPosition = -cameraPosition;
+            await Task.Delay(200);  
+            var yRotation = mainCamera.transform.localRotation.eulerAngles.y;
+            var angles = offsetObject.localRotation.eulerAngles;
+            angles.y = -yRotation;
+            offsetObject.localRotation = Quaternion.Euler(angles);
+        }
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button0))
+            {
+                ResetPosition();
+            }
         }
     }
 }

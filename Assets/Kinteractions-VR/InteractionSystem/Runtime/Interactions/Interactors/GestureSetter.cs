@@ -30,7 +30,10 @@ namespace Kandooz.InteractionSystem.Interactions
             {
                 if (grip)
                 {
-                    gestureVariable.value = index ? Gesture.Fist : Gesture.Pointing;
+                    if (index)
+                        gestureVariable.value = Gesture.Fist;
+                    else
+                        gestureVariable.value = Gesture.Pointing;
                 }
                 else if (!index)
                 {
