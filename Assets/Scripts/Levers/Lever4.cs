@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class Lever4 : MonoBehaviour
 {
-    public GameObject leverObject; 
-    public Light light3;
-    public Light light4;
-    public float rotationSpeed = 1f;
+    public Light light1;
+    
+   
     public float colorChangeCooldown = 1f;
 
     private bool isUp = false;
     private bool isRotating = false;
     private float lastColorChangeTime;
+    private Quaternion originalRotation;
 
-    private void Update()
+    public AudioSource audioSource;
+  
+
+    private void Start()
     {
-        if (isRotating)
-        {
-            
-            return;
-        }
+        
+        originalRotation = transform.rotation;
     }
 
     private void OnTriggerStay(Collider other)
@@ -33,20 +33,35 @@ public class Lever4 : MonoBehaviour
                 {
                     Debug.Log("Triggered by: " + other.gameObject.name);
 
-                    light3.color = Color.green;
-                    light4.color = Color.green;
+                    transform.rotation = Quaternion.Euler(-15f, 0f, 0f);
 
-                   
-                   /* StartCoroutine(RotateLever(-5f));*/
+                    if (audioSource != null)
+                    {
+                        Debug.Log("Playing green audio");
+                        audioSource.Play();
+                    }
+
+                    light1.color = Color.green;
+                    Debug.Log("Setting rotation to -5");
+
+
+
+
                     isUp = false;
                 }
                 else
                 {
-                    light3.color = Color.red;
-                    light4.color = Color.red;
+                    transform.rotation = originalRotation;
 
-                   
-                   // StartCoroutine(RotateLever(0f));
+                    if (audioSource != null)
+                    {
+                        audioSource.Play();
+                    }
+                    
+                    light1.color = Color.red;
+
+                    
+
                     isUp = true;
                 }
 
@@ -54,22 +69,4 @@ public class Lever4 : MonoBehaviour
             }
         }
     }
-
-   /* private IEnumerator RotateLever(float targetRotation)
-    {
-        isRotating = true;
-        Quaternion startRotation = leverObject.transform.rotation;
-        Quaternion endRotation = Quaternion.Euler(targetRotation, 0f, 0f);
-        float startTime = Time.time;
-
-        while (Time.time - startTime <= rotationSpeed)
-        {
-            float t = (Time.time - startTime) / rotationSpeed;
-            leverObject.transform.rotation = Quaternion.Slerp(startRotation, endRotation, t);
-            yield return null;
-        }
-
-        leverObject.transform.rotation = endRotation; 
-        isRotating = false;
-    }*/
 }
