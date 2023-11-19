@@ -1229,7 +1229,7 @@ MonoBehaviour:
   constraintsType: 0
   smoothHandTransition: 1
   limited: 1
-  limit: 160
+  limit: 140
   center: 0
 --- !u!1 &1693226603785788816
 GameObject:
@@ -1751,7 +1751,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000011920929, y: -4.656613e-10, z: 0.000000003259629, w: 1}
   m_LocalPosition: {x: -0.0000001318713, y: 0.00000022598809, z: -0.00000012146373}
-  m_LocalScale: {x: 0.9999998, y: 0.99999976, z: 0.9999999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3081300997761160301}
@@ -2542,13 +2542,15 @@ GameObject:
   - component: {fileID: 7086046020952878989}
   - component: {fileID: 9194123552408448654}
   - component: {fileID: 6759993906670388628}
-  - component: {fileID: 6770795034973194456}
+  - component: {fileID: 2800059196596559382}
+  - component: {fileID: 1500796024999928303}
+  - component: {fileID: 480489775280447626}
   m_Layer: 0
   m_Name: PowerSwitch_Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &684086820379046340
 Transform:
@@ -2638,8 +2640,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!65 &6770795034973194456
-BoxCollider:
+--- !u!114 &2800059196596559382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4327192597202146578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3945e424801496a4cb1430c8be53e4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lever4: {fileID: 0}
+  light3: {fileID: 0}
+  light4: {fileID: 0}
+--- !u!64 &1500796024999928303
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2655,10 +2672,34 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4668b06fbf9505340bf129edaa6b6757, type: 3}
+--- !u!136 &480489775280447626
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4327192597202146578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2645746, y: 0.078976765, z: 0.080945395}
-  m_Center: {x: 0.0000050707195, y: -0.24841392, z: 0.0000005592328}
+  serializedVersion: 2
+  m_Radius: 0.027653178
+  m_Height: 0.15408044
+  m_Direction: 0
+  m_Center: {x: -0.0020402588, y: -0.24649121, z: -0.0008526735}
 --- !u!1 &4343580635513869085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,7 +3067,7 @@ Transform:
   m_GameObject: {fileID: 5142993930679741771}
   serializedVersion: 2
   m_LocalRotation: {x: -0.000000019505036, y: -0.0000002135017, z: 0.7454764, w: 0.66653204}
-  m_LocalPosition: {x: 0.12459067, y: 0.63270044, z: -0.027156506}
+  m_LocalPosition: {x: 0.12459064, y: 0.6327007, z: -0.027156383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3483,7 +3524,7 @@ GameObject:
   - component: {fileID: 1157235068494691436}
   m_Layer: 7
   m_Name: RightPoseConstrainter(Clone)
-  m_TagString: Untagged
+  m_TagString: RightHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3611,7 +3652,7 @@ Transform:
   m_GameObject: {fileID: 6283875742364516547}
   serializedVersion: 2
   m_LocalRotation: {x: 0.00000021794858, y: -0.0000017183598, z: -0.7434333, w: 0.66881025}
-  m_LocalPosition: {x: -0.060969695, y: 0.66575855, z: -0.03446762}
+  m_LocalPosition: {x: -0.06096968, y: 0.66575867, z: -0.034467496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4631,7 +4672,7 @@ GameObject:
   - component: {fileID: 5961837900748738660}
   m_Layer: 7
   m_Name: LeftPoseConstrainter(Clone)
-  m_TagString: Untagged
+  m_TagString: RightHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
