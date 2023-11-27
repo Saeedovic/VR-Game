@@ -95,7 +95,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 5ac541e8135dada41aa04230525fc192, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: a1492fdb344283348a14cf29b587b779, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1639,8 +1639,8 @@ Transform:
   m_GameObject: {fileID: 62132412}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2198806, y: 5.786959, z: -5.2902603}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5846, y: 5.7569, z: 2.573}
+  m_LocalScale: {x: 0.598439, y: 0.598439, z: 0.598439}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 386136149}
@@ -11730,8 +11730,8 @@ Transform:
   m_GameObject: {fileID: 557878808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2198806, y: 5.786959, z: 10.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5846, y: 5.7569, z: 12.124}
+  m_LocalScale: {x: 0.598439, y: 0.598439, z: 0.598439}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1574514300}
@@ -13004,15 +13004,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3752440976338406036, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14
+      value: -3.379
       objectReference: {fileID: 0}
     - target: {fileID: 3752440976338406036, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.17
+      value: 2.13
       objectReference: {fileID: 0}
     - target: {fileID: 3752440976338406036, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.61
+      value: 7.35
       objectReference: {fileID: 0}
     - target: {fileID: 3752440976338406036, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22017,8 +22017,8 @@ Transform:
   m_GameObject: {fileID: 1182963474}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.796959, z: 13.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.059236, y: 6.9597, z: 13.926}
+  m_LocalScale: {x: 0.598439, y: 0.598439, z: 0.598439}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1685504920}
@@ -28584,8 +28584,8 @@ Transform:
   m_GameObject: {fileID: 1494934016}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.2198806, y: 5.786959, z: 26.61}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.5846, y: 5.7569, z: 21.663}
+  m_LocalScale: {x: 0.598439, y: 0.598439, z: 0.598439}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2107272928}
@@ -31961,8 +31961,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 6.53
-  m_Range: 1.1329827
+  m_Intensity: 6
+  m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -36325,8 +36325,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 3
-  m_Range: 1.5769734
+  m_Intensity: 6
+  m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -37451,8 +37451,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 3
-  m_Range: 1.6904817
+  m_Intensity: 6
+  m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -40682,8 +40682,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 3
-  m_Range: 1.639647
+  m_Intensity: 6
+  m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
