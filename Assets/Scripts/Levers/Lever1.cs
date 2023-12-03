@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Lever1 : MonoBehaviour
 {
-    
- 
+    public Light light1;
+    public Light light3;
+    public Light light4;
+
     public float colorChangeCooldown = 1.5f;
 
     private bool isUp = false;
@@ -38,7 +40,10 @@ public class Lever1 : MonoBehaviour
                         
                         audioSource.Play();
                     }
-                   
+
+                    light1.color = Color.green;
+                    light3.color = Color.green;
+                    light4.color = Color.green;
                     Debug.Log("Setting rotation to -5");
 
 
@@ -53,9 +58,11 @@ public class Lever1 : MonoBehaviour
                     {
                         audioSource.Play();
                     }
-                  
 
 
+                    light1.color = Color.red;
+                    light3.color = Color.red;
+                    light4.color = Color.red;
 
                     isUp = true;
                 }

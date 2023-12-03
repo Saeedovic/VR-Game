@@ -5,7 +5,8 @@ using UnityEngine;
 public class Lever3 : MonoBehaviour
 {
   
-    public Light light4;
+    public Light light2;
+    public Light light3;
   
     public float colorChangeCooldown = 1f;
 
@@ -41,8 +42,10 @@ public class Lever3 : MonoBehaviour
                         audioSource.Play();
                     }
                    
-                    light4.color = Color.red;
-                    
+                    light2.color = Color.green;
+                    light2.color = Color.green;
+
+
 
 
 
@@ -57,7 +60,9 @@ public class Lever3 : MonoBehaviour
                         audioSource.Play();
                     }
                    
-                    light4.color = Color.red;
+                    light3.color = Color.red;
+                    light2.color = Color.red;
+
 
 
 

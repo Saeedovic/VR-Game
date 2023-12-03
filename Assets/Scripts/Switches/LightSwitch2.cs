@@ -4,7 +4,7 @@ using UnityEngine;
 public class LightSwitch2 : MonoBehaviour
 {
     public Light lightSwitchLight1;
-    public Light lightSwitchLight2;
+    public Light lightSwitchLight3;
     public float rotationSpeed = 1f;
     public float colorChangeCooldown = 1f;
 
@@ -58,7 +58,7 @@ public class LightSwitch2 : MonoBehaviour
         }
 
         lightSwitchLight1.color = isUp ? Color.red : Color.green;
-        lightSwitchLight2.color = isUp ? Color.red : Color.green;
+        lightSwitchLight3.color = isUp ? Color.red : Color.green;
         isUp = !isUp;
     }
 }

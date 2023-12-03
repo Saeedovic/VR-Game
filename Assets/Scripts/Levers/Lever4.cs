@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lever4 : MonoBehaviour
 {
     public Light light1;
+    public Light light2;
     
    
     public float colorChangeCooldown = 1f;
@@ -42,6 +43,7 @@ public class Lever4 : MonoBehaviour
                     }
 
                     light1.color = Color.green;
+                    light2.color = Color.green;
                     Debug.Log("Setting rotation to -5");
 
 
@@ -59,8 +61,10 @@ public class Lever4 : MonoBehaviour
                     }
                     
                     light1.color = Color.red;
+                    light2.color = Color.red;
 
-                    
+
+
 
                     isUp = true;
                 }

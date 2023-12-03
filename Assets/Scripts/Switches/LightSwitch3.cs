@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class LightSwitch3 : MonoBehaviour
 {
+    public Light lightSwitchLight1;
+    public Light lightSwitchLight2;
+    public Light lightSwitchLight3;
+    public Light lightSwitchLight4;
     public float rotationSpeed = 1f;
     public float colorChangeCooldown = 1f;
 
@@ -54,6 +58,11 @@ public class LightSwitch3 : MonoBehaviour
             Debug.Log("Playing audio");
             audioSource.Play();
         }
+        lightSwitchLight1.color = isUp ? Color.red : Color.red;
+        lightSwitchLight2.color = isUp ? Color.red : Color.red;
+        lightSwitchLight3.color = isUp ? Color.red : Color.red;
+        lightSwitchLight4.color = isUp ? Color.red : Color.red;
+
 
         isUp = !isUp;
     }

@@ -8373,7 +8373,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 324026667078231481, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1776025776}
+      addedObject: {fileID: 1776025771}
   m_SourcePrefab: {fileID: 100100000, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
 --- !u!4 &376600096 stripped
 Transform:
@@ -14706,6 +14706,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1985914985}
     - target: {fileID: 2800059196596559382, guid: 2cfa2c85e5f30e248b1cd1f2420224aa, type: 3}
+      propertyPath: light2
+      value: 
+      objectReference: {fileID: 1943783280}
+    - target: {fileID: 2800059196596559382, guid: 2cfa2c85e5f30e248b1cd1f2420224aa, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 855149505}
@@ -15081,11 +15085,36 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2800059196596559382, guid: 2cfa2c85e5f30e248b1cd1f2420224aa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4327192597202146578, guid: 2cfa2c85e5f30e248b1cd1f2420224aa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 644513643}
   m_SourcePrefab: {fileID: 100100000, guid: 2cfa2c85e5f30e248b1cd1f2420224aa, type: 3}
+--- !u!1 &644513642 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4327192597202146578, guid: 2cfa2c85e5f30e248b1cd1f2420224aa, type: 3}
+  m_PrefabInstance: {fileID: 644513641}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &644513643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644513642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3945e424801496a4cb1430c8be53e4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light1: {fileID: 1985914985}
+  light2: {fileID: 1943783280}
+  colorChangeCooldown: 1
+  audioSource: {fileID: 855149505}
 --- !u!1 &650223724
 GameObject:
   m_ObjectHideFlags: 0
@@ -15309,7 +15338,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 324026667078231481, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1918784243}
+      addedObject: {fileID: 1918784238}
   m_SourcePrefab: {fileID: 100100000, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
 --- !u!4 &658993879 stripped
 Transform:
@@ -24749,7 +24778,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 324026667078231481, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
   m_PrefabInstance: {fileID: 1987006422}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1209302593
+--- !u!114 &1209302588
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24758,11 +24787,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1209302587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2011674adc84ed94abd2b8e34704437b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e15532d9d2f3a44d94f3ee0e0a2627f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightSwitchLight1: {fileID: 1985914985}
+  lightSwitchLight3: {fileID: 2143692479}
   rotationSpeed: 1
-  colorChangeCooldown: 2
+  colorChangeCooldown: 1
   audioSource: {fileID: 1735563867}
 --- !u!1001 &1219175616
 PrefabInstance:
@@ -31898,6 +31929,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1037bf526726af244bd6642780f11dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  light1: {fileID: 1985914985}
+  light3: {fileID: 2143692479}
+  light4: {fileID: 1670064604}
   colorChangeCooldown: 1.5
   audioSource: {fileID: 855149505}
 --- !u!1001 &1507762989
@@ -32621,7 +32655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light3: {fileID: 2143692479}
-  light4: {fileID: 1670064604}
+  light4: {fileID: 0}
   colorChangeCooldown: 1.5
   audioSource: {fileID: 855149505}
 --- !u!1001 &1561453194
@@ -37116,7 +37150,7 @@ PrefabInstance:
       addedObject: {fileID: 1735563867}
     - targetCorrespondingSourceObject: {fileID: 324026667078231481, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1735563870}
+      addedObject: {fileID: 1735563868}
   m_SourcePrefab: {fileID: 100100000, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
 --- !u!4 &1724672402 stripped
 Transform:
@@ -37302,7 +37336,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1735563870
+--- !u!114 &1735563868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37311,12 +37345,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1735563862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b161291e33fe15746bc6e8288db0b131, type: 3}
+  m_Script: {fileID: 11500000, guid: 14d92a4687eec52498f18e9b11738e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightSwitchLight2: {fileID: 1943783280}
   lightSwitchLight4: {fileID: 1670064604}
   rotationSpeed: 1
-  colorChangeCooldown: 2
+  colorChangeCooldown: 1
   audioSource: {fileID: 1735563867}
 --- !u!1001 &1735791473
 PrefabInstance:
@@ -37883,7 +37918,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 324026667078231481, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
   m_PrefabInstance: {fileID: 376600095}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1776025776
+--- !u!114 &1776025771
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37892,12 +37927,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776025770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14d92a4687eec52498f18e9b11738e59, type: 3}
+  m_Script: {fileID: 11500000, guid: b161291e33fe15746bc6e8288db0b131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lightSwitchLight1: {fileID: 1985914985}
+  lightSwitchLight2: {fileID: 1943783280}
+  lightSwitchLight4: {fileID: 1670064604}
   rotationSpeed: 1
-  colorChangeCooldown: 2
+  colorChangeCooldown: 1
   audioSource: {fileID: 1735563867}
 --- !u!1001 &1777625264
 PrefabInstance:
@@ -39288,7 +39325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da780a351e9bfb949b14c7ce937fda1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light4: {fileID: 1670064604}
+  light2: {fileID: 1943783280}
+  light3: {fileID: 2143692479}
   colorChangeCooldown: 1.5
   audioSource: {fileID: 855149505}
 --- !u!1001 &1831673904
@@ -40875,7 +40913,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 324026667078231481, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
   m_PrefabInstance: {fileID: 658993878}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1918784243
+--- !u!114 &1918784238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40884,14 +40922,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1918784237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e15532d9d2f3a44d94f3ee0e0a2627f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2011674adc84ed94abd2b8e34704437b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lightSwitchLight1: {fileID: 1985914985}
   lightSwitchLight2: {fileID: 1943783280}
+  lightSwitchLight3: {fileID: 2143692479}
+  lightSwitchLight4: {fileID: 1670064604}
   rotationSpeed: 1
-  colorChangeCooldown: 2
-  audioSource: {fileID: 1735563867}
+  colorChangeCooldown: 1
+  audioSource: {fileID: 0}
 --- !u!1 &1923896558
 GameObject:
   m_ObjectHideFlags: 0
@@ -42905,7 +42945,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 324026667078231481, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1209302593}
+      addedObject: {fileID: 1209302588}
   m_SourcePrefab: {fileID: 100100000, guid: 1c4151658ec90d54e861d0a34461ba21, type: 3}
 --- !u!4 &1987006423 stripped
 Transform:
