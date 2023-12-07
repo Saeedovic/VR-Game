@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lever1 : MonoBehaviour
+public class Lever1: MonoBehaviour
 {
     public Light light1;
     public Light light3;
@@ -11,64 +11,71 @@ public class Lever1 : MonoBehaviour
     public float colorChangeCooldown = 1.5f;
 
     private bool isUp = false;
-    private bool isRotating = false;
     private float lastColorChangeTime;
     private Quaternion originalRotation;
-
     public AudioSource audioSource;
 
 
+    private Vector3 greenRotation = new Vector3(352, 358, 3);
+
     private void Start()
     {
-
         originalRotation = transform.rotation;
     }
 
-    private void OnTriggerStay(Collider other)
+    public void Update()
     {
-        if (other.gameObject.name == "HandTrigger" && !isRotating)
+
+        Vector3 currentRotation = transform.rotation.eulerAngles;
+
+       
+        if (!isUp && Vector3.Distance(currentRotation, greenRotation) < 1)
         {
-            if (Time.time - lastColorChangeTime >= colorChangeCooldown)
+            ActivateLights();
+        }
+        else if (isUp && Vector3.Distance(currentRotation, originalRotation.eulerAngles) < 1)
+        {
+            DeactivateLights();
+        }
+    }
+
+    private void ActivateLights()
+    {
+        if (Time.time - lastColorChangeTime >= colorChangeCooldown)
+        {
+
+            if (audioSource != null)
             {
-                if (isUp)
-                {
-                    Debug.Log("Triggered by: " + other.gameObject.name);
-                    transform.rotation = Quaternion.Euler(-15f, 0f, 0f);
-
-                    if (audioSource != null)
-                    {
-                        
-                        audioSource.Play();
-                    }
-
-                    light1.color = Color.green;
-                    light3.color = Color.green;
-                    light4.color = Color.green;
-                    Debug.Log("Setting rotation to -5");
-
-
-
-                    isUp = false;
-                }
-                else
-                {
-                    transform.rotation = originalRotation;
-
-                    if (audioSource != null)
-                    {
-                        audioSource.Play();
-                    }
-
-
-                    light1.color = Color.red;
-                    light3.color = Color.red;
-                    light4.color = Color.red;
-
-                    isUp = true;
-                }
-
-                lastColorChangeTime = Time.time;
+                audioSource.Play();
             }
+
+            Debug.Log("Setting lights to green");
+            light1.color = Color.green;
+            light3.color = Color.green;
+            light4.color = Color.green;
+
+
+            isUp = true;
+            lastColorChangeTime = Time.time;
+        }
+    }
+
+    private void DeactivateLights()
+    {
+        if (Time.time - lastColorChangeTime >= colorChangeCooldown)
+        {
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
+            Debug.Log("Setting lights to red");
+            light1.color = Color.red;
+            light3.color = Color.red;
+            light4.color = Color.red;
+
+
+            isUp = false;
+            lastColorChangeTime = Time.time;
         }
     }
 }
