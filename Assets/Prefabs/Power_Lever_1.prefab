@@ -489,6 +489,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6088543573892492612}
+  - {fileID: 5158999010606080028}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!65 &5065455426367651763
@@ -1123,7 +1124,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5789104556651970328}
-  - component: {fileID: 4168122342976373894}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -1139,98 +1139,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627672049266030477}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0243248, y: -0.02952498, z: 0.9992476, w: 0.006386161}
-  m_LocalPosition: {x: -0.000048853464, y: -0.09728421, z: 0.00038492685}
-  m_LocalScale: {x: 0.465521, y: 0.46552086, z: 0.46552014}
+  m_LocalRotation: {x: -0, y: -0, z: 9.313226e-10, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6118278378501623339}
-  m_Father: {fileID: 6088543573892492612}
+  m_Father: {fileID: 5158999010606080028}
   m_LocalEulerAnglesHint: {x: -85.615, y: 140.15, z: -140.882}
---- !u!114 &4168122342976373894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627672049266030477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6b4cb8c3d9a4b77884dac1b51009c74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionHand: 3
-  selectionButton: 1
-  onSelected:
-    m_PersistentCalls:
-      m_Calls: []
-  onDeselected:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  onActivated:
-    m_PersistentCalls:
-      m_Calls: []
-  isSelected: 0
-  currentInteractor: {fileID: 0}
-  currentState: 0
-  interactableObject: {fileID: 6118278378501623339}
-  leftHand: {fileID: 3081300997761160301}
-  rightHand: {fileID: 2357746503182258967}
-  leftConstraints:
-    indexFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    middleFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    ringFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    pinkyFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    thumbFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-  rightConstraints:
-    indexFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    middleFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    ringFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    pinkyFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-    thumbFingerLimits:
-      locked: 0
-      min: 0
-      max: 0
-  pivotParent: {fileID: 5866216737776451085}
-  snapDistance: 0.5
-  constraintsType: 0
-  smoothHandTransition: 1
-  limited: 1
-  limit: 140
-  center: 0
 --- !u!1 &1693226603785788816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,9 +1665,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2789384744964411018}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00000011920929, y: -4.656613e-10, z: 0.000000003259629, w: 1}
-  m_LocalPosition: {x: -0.0000001318713, y: 0.00000022598809, z: -0.00000012146373}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.0000005364418, y: -0.000000018626451, z: 0.0000000013969839, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.671014, y: 1.6710143, z: 1.671014}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3081300997761160301}
@@ -1966,6 +1882,123 @@ Transform:
   - {fileID: 891840452005696631}
   m_Father: {fileID: 3591143004591218898}
   m_LocalEulerAnglesHint: {x: -3.2307787, y: 75.88172, z: -12.112688}
+--- !u!1 &3356943513326944289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5158999010606080028}
+  - component: {fileID: 3940327048118707614}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5158999010606080028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356943513326944289}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.021716055, y: 0.6856975, z: 0.7274521, w: -0.01268442}
+  m_LocalPosition: {x: -0.027210236, y: 0.3057804, z: 0.26495934}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5789104556651970328}
+  m_Father: {fileID: 77560414932383678}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3940327048118707614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356943513326944289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b4cb8c3d9a4b77884dac1b51009c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionHand: 3
+  selectionButton: 1
+  onSelected:
+    m_PersistentCalls:
+      m_Calls: []
+  onDeselected:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverStart:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  onActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  isSelected: 0
+  currentInteractor: {fileID: 0}
+  currentState: 0
+  interactableObject: {fileID: 6118278378501623339}
+  leftHand: {fileID: 3081300997761160301}
+  rightHand: {fileID: 2357746503182258967}
+  leftConstraints:
+    indexFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    middleFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    ringFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    pinkyFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    thumbFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+  rightConstraints:
+    indexFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    middleFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    ringFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    pinkyFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+    thumbFingerLimits:
+      locked: 0
+      min: 0
+      max: 0
+  pivotParent: {fileID: 5866216737776451085}
+  snapDistance: 0.5
+  constraintsType: 0
+  smoothHandTransition: 1
+  limited: 1
+  limit: 50
+  center: 0
 --- !u!1 &3361846450510294245
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,9 +2661,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3945e424801496a4cb1430c8be53e4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light3: {fileID: 0}
-  light4: {fileID: 0}
-  rotationSpeed: 1
+  light1: {fileID: 0}
+  light2: {fileID: 0}
   colorChangeCooldown: 1
   audioSource: {fileID: 0}
 --- !u!136 &480489775280447626
@@ -3318,8 +3350,7 @@ Transform:
   m_LocalPosition: {x: -0.027, y: 0.30412695, z: -0.153}
   m_LocalScale: {x: 4.2962627, y: 4.296263, z: 4.29627}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5789104556651970328}
+  m_Children: []
   m_Father: {fileID: 77560414932383678}
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 90.00001}
 --- !u!33 &906373697652386977
