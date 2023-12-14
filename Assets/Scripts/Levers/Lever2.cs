@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Lever2 : MonoBehaviour
 {
+  
     public Light light3;
     public Light light4;
-    
-    public float colorChangeCooldown = 1f;
+    public float colorChangeCooldown = 1.5f;
 
     private bool isUp = false;
     private bool isRotating = false;
@@ -25,23 +25,28 @@ public class Lever2 : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+
         if (other.gameObject.name == "HandTrigger" && !isRotating)
         {
+
             if (Time.time - lastColorChangeTime >= colorChangeCooldown)
             {
+
                 if (isUp)
                 {
                     Debug.Log("Triggered by: " + other.gameObject.name);
-
-                    transform.rotation = Quaternion.Euler(-15f, 0f, 0f);
+                    transform.rotation = Quaternion.Euler(70, 0f, 0f);
 
                     if (audioSource != null)
                     {
-                        Debug.Log("Playing green audio");
+
                         audioSource.Play();
                     }
+
+                    
                     light3.color = Color.green;
                     light4.color = Color.green;
+
                     Debug.Log("Setting rotation to -5");
 
 
@@ -56,6 +61,8 @@ public class Lever2 : MonoBehaviour
                     {
                         audioSource.Play();
                     }
+
+                   
                     light3.color = Color.red;
                     light4.color = Color.red;
 

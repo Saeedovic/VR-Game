@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Lever1 : MonoBehaviour
 {
-    
- 
+
+    public Light light1;
+    public Light light3;
+    public Light light4;
     public float colorChangeCooldown = 1.5f;
 
     private bool isUp = false;
@@ -24,44 +26,130 @@ public class Lever1 : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name == "HandTrigger" && !isRotating)
-        {
-            if (Time.time - lastColorChangeTime >= colorChangeCooldown)
+        
+            if (other.gameObject.name == "HandTrigger" && !isRotating)
             {
-                if (isUp)
+              
+                if (Time.time - lastColorChangeTime >= colorChangeCooldown)
                 {
-                    Debug.Log("Triggered by: " + other.gameObject.name);
-                    transform.rotation = Quaternion.Euler(-15f, 0f, 0f);
 
-                    if (audioSource != null)
+                    if (isUp)
                     {
-                        
-                        audioSource.Play();
+                        Debug.Log("Triggered by: " + other.gameObject.name);
+                        transform.rotation = Quaternion.Euler(70, 0f, 0f);
+
+                        if (audioSource != null)
+                        {
+
+                            audioSource.Play();
+                        }
+
+                        light1.color = Color.green;
+                        light3.color = Color.green;
+                        light4.color = Color.green;
+
+                        Debug.Log("Setting rotation to -5");
+
+
+
+                        isUp = false;
                     }
-                   
-                    Debug.Log("Setting rotation to -5");
-
-
-
-                    isUp = false;
-                }
-                else
-                {
-                    transform.rotation = originalRotation;
-
-                    if (audioSource != null)
+                    else
                     {
-                        audioSource.Play();
+                        transform.rotation = originalRotation;
+
+                        if (audioSource != null)
+                        {
+                            audioSource.Play();
+                        }
+
+                        light1.color = Color.red;
+                        light3.color = Color.red;
+                        light4.color = Color.red;
+
+
+
+                        isUp = true;
                     }
-                  
 
-
-
-                    isUp = true;
+                    lastColorChangeTime = Time.time;
                 }
-
-                lastColorChangeTime = Time.time;
             }
+    }
+}
+
+/*public Light light1;
+public Light light3;
+public Light light4;
+
+public float colorChangeCooldown = 1.5f;
+
+private bool isUp = false;
+private float lastColorChangeTime;
+private Quaternion originalRotation;
+public AudioSource audioSource;
+
+private void Start()
+{
+    originalRotation = transform.rotation;
+}
+
+private void Update()
+{
+    Vector3 currentRotation = transform.rotation.eulerAngles;
+
+    currentRotation.x = Mathf.Clamp(currentRotation.x, 90, 0);
+
+    float targetRotation = isUp ? originalRotation.eulerAngles.x : 25;
+
+    if (Mathf.Abs(currentRotation.x - targetRotation) < 1)
+    {
+        if (targetRotation == 25)
+        {
+            ActivateLights();
+        }
+        else
+        {
+            DeactivateLights();
         }
     }
 }
+
+private void ActivateLights()
+{
+    if (Time.time - lastColorChangeTime >= colorChangeCooldown)
+    {
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
+        Debug.Log("Setting lights to red");
+        light1.color = Color.red;
+        light3.color = Color.red;
+        light4.color = Color.red;
+
+        isUp = true;
+        lastColorChangeTime = Time.time;
+    }
+}
+
+private void DeactivateLights()
+{
+    if (Time.time - lastColorChangeTime >= colorChangeCooldown)
+    {
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
+
+        Debug.Log("Setting lights to green");
+        light1.color = Color.green;
+        light3.color = Color.green;
+        light4.color = Color.green;
+
+        isUp = false;
+        lastColorChangeTime = Time.time;
+    }
+}
+}*/

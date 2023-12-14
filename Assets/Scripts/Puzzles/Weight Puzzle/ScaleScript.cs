@@ -8,7 +8,8 @@ public class ScaleScript : MonoBehaviour
 {
     public TMP_Text weightText; 
     private float totalWeight = 0f;
-    public float goalWeight = 10f;
+    public float goalWeight = 16f;
+    public Light light2;
 
     void OnCollisionEnter(Collision collision)
     {
@@ -18,6 +19,8 @@ public class ScaleScript : MonoBehaviour
             totalWeight += weightedObject.weight;
             weightText.text = totalWeight + " kg"; 
         }
+
+        
     }
 
     void OnCollisionExit(Collision collision)
@@ -26,15 +29,21 @@ public class ScaleScript : MonoBehaviour
         if (weightedObject != null)
         {
             totalWeight -= weightedObject.weight;
-            weightText.text = totalWeight + " kg"; // Update the weight text
+            weightText.text = totalWeight + " kg"; 
         }
     }
 
-    public void CheckWeight()
+    public void Update()
     {
         if (totalWeight == goalWeight)
         {
+            light2.color = Color.green;
             Debug.Log("Weight Passed");
+        }
+
+        if(totalWeight > goalWeight || totalWeight < goalWeight)
+        {
+            light2.color = Color.red;
         }
     }
 }
