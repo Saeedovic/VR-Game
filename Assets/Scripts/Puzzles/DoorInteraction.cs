@@ -11,6 +11,8 @@ public class DoorInteraction : MonoBehaviour
     public Light light2;
     public Light light3;
     public Light light4;
+    public Light light5;
+    public Light light6;
 
     void Start()
     {
@@ -25,7 +27,7 @@ public class DoorInteraction : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (light1.color == Color.green & light2.color == Color.green & light3.color == Color.green & light4.color == Color.green)
+        if (light1.color == Color.green & light2.color == Color.green & light3.color == Color.green & light4.color == Color.green & light5.color == Color.green & light6.color == Color.green)
         {
 
             if (other.gameObject.name == "HandTrigger")

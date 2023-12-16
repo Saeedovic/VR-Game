@@ -13,30 +13,61 @@ namespace Kandooz.InteractionSystem.Interactions
         private TransformTweenable transformTweenable= new();
         private GrabStrategy grabStrategy;
         private InteractionPoseConstrainer poseConstrainer;
+        private bool isGrabbed;
+        private Collider objectCollider;
         public Transform RightHandRelativePosition => poseConstrainer.RightHandTransform;
         public Transform LeftHandRelativePosition => poseConstrainer.LeftHandTransform;
 
+        
         protected override void Activate(){}
         protected override void StartHover(){}
         protected override void EndHover(){}
+
+       
+        private void Update()
+        {
+          
+            if (isGrabbed)
+            {
+                
+                if (objectCollider)
+                {
+                    objectCollider.enabled = false;
+                }
+            }
+            else
+            {
+                
+                if (objectCollider)
+                {
+                    objectCollider.enabled = true;
+                }
+            }
+        }
+
 
         protected override void Select()
         {
             if (hideHand) CurrentInteractor.ToggleHandModel(false);
             grabStrategy.Initialize(CurrentInteractor);
+            isGrabbed = true;
             InitializeAttachmentPointTransform();
             LerpObjectToPosition(() => grabStrategy.Grab(this, CurrentInteractor));
         }
         protected override void DeSelected()
         {
             if (hideHand) CurrentInteractor.ToggleHandModel(true);
+            isGrabbed = false;
             tweener.RemoveTweenable(transformTweenable);
             grabStrategy.UnGrab(this, CurrentInteractor);
+
+          
         }
         
         private void Awake()
         {
             poseConstrainer ??= GetComponent<InteractionPoseConstrainer>();
+            objectCollider = GetComponent<Collider>();
             tweener ??= GetComponent<VariableTweener>();
             if (!tweener)
             {
