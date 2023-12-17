@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorInteraction : MonoBehaviour
+public class DoorInteraction4 : MonoBehaviour
 {
     public Camera vrCamera;
     public Transform player;
@@ -11,15 +11,7 @@ public class DoorInteraction : MonoBehaviour
     public Light light2;
     public Light light3;
     public Light light4;
-
-    void Start()
-    {
-
-        /*if (vrCamera != null)
-        {
-            vrCamera.enabled = false;
-        }*/
-    }
+  
 
 
 

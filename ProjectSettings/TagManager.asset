@@ -7,6 +7,10 @@ TagManager:
   - InteractiveObject
   - LeftHand
   - RightHand
+  - RedPipe
+  - BlackPipe
+  - BluePipe
+  - GreenPipe
   layers:
   - Default
   - TransparentFX

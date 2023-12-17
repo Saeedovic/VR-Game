@@ -11,15 +11,7 @@ public class DoorInteraction2 : MonoBehaviour
     public Light light2;
     
 
-    void Start()
-    {
-
-        /*if (vrCamera != null)
-        {
-            vrCamera.enabled = false;
-        }*/
-    }
-
+    
 
 
     void OnTriggerEnter(Collider other)
